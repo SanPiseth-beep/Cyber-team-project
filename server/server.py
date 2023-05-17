@@ -11,7 +11,7 @@ server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 server = ssl.wrap_socket(
     server, server_side=True, keyfile="ssl\key.pem", certfile="ssl\certificate.pem"
 )
-
+# hi
 if __name__ == "__main__":
     server.bind((HOST, PORT))
     server.listen(0)
